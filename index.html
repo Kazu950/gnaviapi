@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>飲食店検索アプリ</title>
+        <link rel="stylesheet" href="./layout/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <meta name="description" content="近くにある飲食店を検索することができるアプリケーションです。">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>飲食店検索アプリ</h1>
+            </div>
+        </header>
+        <div class="wrapper">
+            <form>
+                <input id="word" type="text" placeholder="検索ワード"><!-- テキストエリア -->
+                <select id="range">
+                    <option value=1>300m圏内</option>
+                    <option value=2>500m圏内</option>
+                    <option value=3>1000m圏内</option>
+                </select>
+                <input id="btn" type="button" value="検索"><!-- 検索ボタン -->
+            </form>
+            <div id="result" class="container"></div>
+            <script src="./js/search.js"></script>
+        </div>
+    </body>
+</html>
